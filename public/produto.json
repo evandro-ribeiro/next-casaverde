@@ -1,0 +1,46 @@
+{
+    "produtos": [
+        {
+            "id": 1,
+            "title": "Ajuga reptans",
+            "price": 20.00,
+            "description": "Ajuga reptans, comumente conhecida como Ajuga, Tapete-de-ajuga, ou Língua-de-cão, é uma planta rasteira perene pertencente à família Lamiaceae. Nativa da Europa, Ásia e norte da África, a Ajuga reptans é apreciada tanto por suas características ornamentais quanto por suas propriedades de cobertura do solo.",
+            "img": "/home/produto-1.png"
+        },
+        {
+            "id": 2,
+            "title": "Cordyline fruticosa",
+            "price": 20.00,
+            "description": "Cordyline fruticosa, conhecida popularmente como Dracena-vermelha, Dracena-de-madagascar ou simplesmente Cordyline, é uma planta ornamental que pertence à família Asparagaceae. Originária do Sudeste Asiático, Pacífico e Austrália, esta planta é apreciada por suas folhas coloridas e sua capacidade de adicionar um toque exótico aos jardins e paisagens.",
+            "img": "/home/produto-2.png"
+        },
+        {
+            "id": 3,
+            "title": "Crassula ovata",
+            "price": 20.00,
+            "description": "Crassula ovata, comumente conhecida como Jade ou Planta-do-dinheiro, é uma suculenta perene nativa das regiões áridas da África do Sul e Moçambique. Esta planta é apreciada por sua fácil manutenção e sua capacidade de prosperar em condições de pouca água. Apresentando um hábito de crescimento suculento e arbustivo, a Crassula ovata desenvolve folhas carnudas, ovais e brilhantes, dispostas em pares opostos ao longo de seus caules espessos.",
+            "img": "/home/produto-3.png"
+        },
+        {
+            "id": 4,
+            "title": "Cyperus rotundus",
+            "price": 20.00,
+            "description": "Ajuga reptans, comumente conhecida como Ajuga, Tapete-de-ajuga, ou Língua-de-cão, é uma planta rasteira perene pertencente à família Lamiaceae. Nativa da Europa, Ásia e norte da África, a Ajuga reptans é apreciada tanto por suas características ornamentais quanto por suas propriedades de cobertura do solo.",
+            "img": "/home/produto-4.png"
+        },
+        {
+            "id": 5,
+            "title": "Delairea odorata",
+            "price": 20.00,
+            "description": "Ajuga reptans, comumente conhecida como Ajuga, Tapete-de-ajuga, ou Língua-de-cão, é uma planta rasteira perene pertencente à família Lamiaceae. Nativa da Europa, Ásia e norte da África, a Ajuga reptans é apreciada tanto por suas características ornamentais quanto por suas propriedades de cobertura do solo.",
+            "img": "/home/produto-5.png"
+        },
+        {
+            "id": 6,
+            "title": "Datura metel",
+            "price": 20.00,
+            "description": "Ajuga reptans, comumente conhecida como Ajuga, Tapete-de-ajuga, ou Língua-de-cão, é uma planta rasteira perene pertencente à família Lamiaceae. Nativa da Europa, Ásia e norte da África, a Ajuga reptans é apreciada tanto por suas características ornamentais quanto por suas propriedades de cobertura do solo.",
+            "img": "/home/produto-6.png"
+        }
+    ]
+}

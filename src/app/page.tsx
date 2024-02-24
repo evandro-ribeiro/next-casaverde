@@ -1,113 +1,77 @@
+"use client"
+
+import { InputWithButton } from "@/components/input";
 import Image from "next/image";
+
+import { MousePointer, ShoppingCart, Truck } from 'lucide-react';
+import { CardOfertas } from "@/components/cardOfertas";
+import { Depoimentos } from "@/components/depoimentos";
+import { Video } from "@/components/video";
+import { Footer } from "@/components/footer";
+import { NavBar } from "@/components/navbar";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="bg-linhas">
+      <NavBar />
+      <Image src="/home/splash-chamada.png" alt="Imagem de um splash de tinta" width={600} height={500} 
+        className="absolute top-0 right-0 z-0"
+      />
+      <section className="flex justify-center items-center ml-52 w-2/6 h-screen -mt-10">
+        <div className="z-20">
+          <p className="text-zinc-400 mb-4 text-xl">Sua casa com as</p>
+          <h2 className="text-zinc-900 text-6xl font-bold font-title mb-4">melhores plantas</h2>
+          <p className="text-zinc-400 mb-6 text-sm">Encontre aqui uma vasta seleção de plantas para decorar a sua casa e torná-lo uma pessoa mais feliz no seu dia a dia. Entre com seu e-mail e assine nossa newsletter para saber das novidades da marca.</p>
+          <InputWithButton />
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+        {/* z-10 w-3/5 mr-12 */}
+        <Image src="/home/planta-chamada.png" alt="Planta com folhas largas" width={500} height={500} 
+          className="absolute right-80 h-screen mr-3"
         />
-      </div>
+      </section>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      <section className="flex justify-center mx-72 w-3/5 -mt-6">
+        <Image src="/home/como-conseguir.png" alt="Planta verde com folhas maiores" width={250} height={100} 
+          className="w-5/12 h-72 box-border"
+        />
+        <div className="bg-white h-72 w-72 p-6 shadow-2xl z-20">
+          <p className="text-zinc-400 mb-1 font-semibold">Como conseguir</p>
+          <h2 className="text-zinc-900 text-3xl font-bold font-title mb-4">minha planta</h2>
+          <ul className="flex flex-col gap-5 font-semibold">
+            <li className="flex text-zinc-400 items-center gap-3"><MousePointer color="white" className="rounded-3xl bg-yellow-300 size-9 p-2.5" />Escolha suas plantas</li>
+            <li className="flex text-zinc-400 items-center gap-3"><ShoppingCart color="white" className="rounded-3xl bg-yellow-300 size-9 p-2.5" />Faça seu pedido</li>
+            <li className="flex text-zinc-400 items-center gap-3"><Truck color="white" className="rounded-3xl bg-yellow-300 size-9 p-2.5" />Aguarde na sua casa</li>
+          </ul>
+        </div>
+      </section>
+      <section className="mt-10 mb-20">
+        <div className="flex flex-col items-center">
+          <p className="text-zinc-400 mb-1 font-semibold">Conheça nossas</p>
+          <h2 className="text-zinc-900 text-6xl font-bold font-title mb-4">ofertas</h2>
+        </div>
+        <div className="flex flex-wrap justify-center gap-5 mx-10">
+          <CardOfertas id={1} />
+          <CardOfertas id={2} />
+          <CardOfertas id={3} />
+          <CardOfertas id={4} />
+          <CardOfertas id={5} />
+          <CardOfertas id={6} />
+        </div>
+      </section>
+      <Depoimentos src="/home/mulher-sorrindo.png" alt="Mulher sorrindo" autor="Juliana Ferraz" anoCliente="2018" />
+      <section>
+        <div className="flex flex-col items-center">
+          <p className="text-zinc-400 mb-1 font-semibold">Veja aqui os nossos</p>
+          <h2 className="text-zinc-900 text-6xl font-bold font-title mb-4">vídeos</h2>
+          <div className="flex gap-6 mb-20">
+            <Video src="/home/video1.png" alt="Imagem do vídeo 1" />
+            <Video src="/home/video2.png" alt="Imagem do vídeo 2" />
+            <Video src="/home/video3.png" alt="Imagem do vídeo 3" />
+            <Video src="/home/video4.png" alt="Imagem do vídeo 4" />
+          </div>
+        </div>
+      </section>
+      <Footer />
     </main>
   );
 }
