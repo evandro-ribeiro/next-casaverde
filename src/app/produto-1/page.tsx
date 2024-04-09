@@ -39,7 +39,7 @@ export default function Produto1() {
     return (
         <section className="bg-linhas">
             <NavBar />
-            <section className="justify-end py-8 flex">
+            <section className="justify-center md:justify-end md:py-4 flex h-96 md:h-fit">
                 <Image className="absolute h-auto w-64 top-20 mt-20 left-48 z-10" src={produto.img} alt={`Imagem do produto ${produto.id}`} width={900} height={300} />
                 <Image className="absolute left-0 top-16 mt-8 z-0" src="/ofertas/splash-chamada-ofertas.svg" alt="Imagem de um borrão de tinta amarela" width={400} height={500} />
                 <div className="flex flex-col max-w-96 mr-64 gap-2">

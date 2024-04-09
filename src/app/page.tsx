@@ -19,25 +19,25 @@ export default function Home() {
       />
       <section className="flex justify-center items-center ml-52 w-2/6 h-screen -mt-10">
         <div className="z-20">
-          <p className="text-zinc-400 mb-4 text-xl">Sua casa com as</p>
-          <h2 className="text-zinc-900 text-6xl font-bold font-title mb-4">melhores plantas</h2>
-          <p className="text-zinc-400 mb-6 text-sm">Encontre aqui uma vasta seleção de plantas para decorar a sua casa e torná-lo uma pessoa mais feliz no seu dia a dia. Entre com seu e-mail e assine nossa newsletter para saber das novidades da marca.</p>
+          <p className="text-zinc-400 mb-4 text-base md:text-xl">Sua casa com as</p>
+          <h2 className="text-zinc-900 text-5xl md:text-6xl font-bold font-title mb-4">melhores plantas</h2>
+          <p className="text-zinc-400 mb-6 text-sm hidden md:block">Encontre aqui uma vasta seleção de plantas para decorar a sua casa e torná-lo uma pessoa mais feliz no seu dia a dia. Entre com seu e-mail e assine nossa newsletter para saber das novidades da marca.</p>
           <InputWithButton />
         </div>
         {/* z-10 w-3/5 mr-12 */}
         <Image src="/home/planta-chamada.png" alt="Planta com folhas largas" width={500} height={500} 
-          className="absolute right-80 h-screen mr-3"
+          className="absolute w-fit md:w-auto right-56 md:right-80 h-screen mr-3"
         />
       </section>
 
-      <section className="flex justify-center mx-72 w-3/5 -mt-6">
+      <section className="flex justify-center h-60 md:mx-72 md:w-3/5 md:-mt-6">
         <Image src="/home/como-conseguir.png" alt="Planta verde com folhas maiores" width={250} height={100} 
-          className="w-5/12 h-72 box-border"
+          className="w-5/12 md:h-72 box-border"
         />
-        <div className="bg-white h-72 w-72 p-6 shadow-2xl z-20">
-          <p className="text-zinc-400 mb-1 font-semibold">Como conseguir</p>
-          <h2 className="text-zinc-900 text-3xl font-bold font-title mb-4">minha planta</h2>
-          <ul className="flex flex-col gap-5 font-semibold">
+        <div className="bg-white md:h-72 w-72 p-6 shadow-2xl z-20">
+          <p className="text-zinc-400 md:mb-1 font-semibold">Como conseguir</p>
+          <h2 className="text-zinc-900 text-3xl font-bold font-title py-2 md:mb-4">minha planta</h2>
+          <ul className="flex flex-col gap-2 md:gap-5 font-semibold">
             <li className="flex text-zinc-400 items-center gap-3"><MousePointer color="white" className="rounded-3xl bg-yellow-300 size-9 p-2.5" />Escolha suas plantas</li>
             <li className="flex text-zinc-400 items-center gap-3"><ShoppingCart color="white" className="rounded-3xl bg-yellow-300 size-9 p-2.5" />Faça seu pedido</li>
             <li className="flex text-zinc-400 items-center gap-3"><Truck color="white" className="rounded-3xl bg-yellow-300 size-9 p-2.5" />Aguarde na sua casa</li>
@@ -63,7 +63,7 @@ export default function Home() {
         <div className="flex flex-col items-center">
           <p className="text-zinc-400 mb-1 font-semibold">Veja aqui os nossos</p>
           <h2 className="text-zinc-900 text-6xl font-bold font-title mb-4">vídeos</h2>
-          <div className="flex gap-6 mb-20">
+          <div className="flex flex-wrap justify-center gap-3 md:gap-6 mb-20">
             <Video src="/home/video1.png" alt="Imagem do vídeo 1" />
             <Video src="/home/video2.png" alt="Imagem do vídeo 2" />
             <Video src="/home/video3.png" alt="Imagem do vídeo 3" />
