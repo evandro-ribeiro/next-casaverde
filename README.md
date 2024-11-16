@@ -1,3 +1,5 @@
+<img width=100% src="./public/banner-readme.png"/>
+
 # Projeto CasaVerde - Arquitetura
 
 Meu primeiro projeto utilizando o framework Next.js, para construção de um site com alta performance e com muita usabilidade!
